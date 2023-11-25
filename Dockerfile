@@ -4,6 +4,6 @@ WORKDIR /python-docker
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 8007
 
-CMD ["python3" "app.py"]
+CMD ["python" "app.py"]
