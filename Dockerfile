@@ -2,8 +2,10 @@ FROM python:3.11.2-buster
 
 WORKDIR /python-docker
 
+RUN pip install -r requirements.txt
+
 COPY . .
 
-EXPOSE 8007
+EXPOSE 8000
 
-CMD ["python" "app.py"]
+CMD ["python", "app.py"]
